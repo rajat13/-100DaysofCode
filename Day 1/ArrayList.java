@@ -34,6 +34,7 @@ public class ArrayList<T> implements List<T>{
 			}
 		array[size]=element;
 		size++;
+		System.out.println("Element "+ element +" added at index "+ ((this.size)-1));
 		}
 
 	/** @param int index
@@ -52,6 +53,8 @@ public class ArrayList<T> implements List<T>{
 					}
 				array[index]=element;
 				size++;
+		System.out.println("Element "+ element +" added at index "+ index);
+
 			}	}
 		else if(index==array.length){
 			add(element);
@@ -108,6 +111,7 @@ public class ArrayList<T> implements List<T>{
 			}
 		array[this.size]=null;
 		this.size--;
+		System.out.println("Element at index"+index+" removed");
 		return returnElement;
 		}
 
@@ -121,6 +125,7 @@ public class ArrayList<T> implements List<T>{
 			tempArray[i] = array[i];	
 			}
 		array = tempArray;
+		System.out.println("ArrayList increased by factor"+FACTOR);
 }
 
 	}
